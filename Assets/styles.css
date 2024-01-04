@@ -1,0 +1,118 @@
+h1 {
+    color: rgb(28, 6, 48);
+}
+p{
+    color: darkolivegreen;
+}
+li{
+    color: blue;
+}
+li{
+    list-style-type: square
+    /*Este elemento cambia las viñetas por cuadrados*/
+}
+
+.impar{
+    color: crimson;
+    font-weight: bold;
+}
+
+/* el punto (.) es para la clase y (#) es para el id */
+span{
+    color: darkmagenta;
+}
+li em{
+    color: rebeccapurple;
+}
+
+/* em es la etiqueta de la letra cursiva*/
+
+h1 +p{
+    font-size: 200%;
+}
+#uno{
+    color: darkred;
+}
+
+a:link {
+    color: blue; 
+}
+/* a:link es la liga que no ha sido visitada*/
+a:visited{
+    color: violet;
+}
+/*Es la liga que ya ha sido visitada*/
+a:hover{
+    text-decoration: none;
+}
+/*Quita la linea debajo del link cuando se posiciona el mause*/
+
+
+/* selecciona cualquier elemento <span> que se encuentre dentro de un <p>, que esté dentro de un <artículo> 
+        artículo p span { ... }*/
+
+/* selecciona cualquier <p> que se encuentre directamente después de <ul>, que va directamente después de <h1> 
+                    h1 + ul + p { ... }*/
+
+body h1 + p .impar {
+    color: yellow;
+    background-color: black;
+    padding: 5px;
+}
+.outer{
+    border: 2px solid black;
+    text-align: center;
+}
+.box{
+    padding: 10px;
+    width: calc(90%-30%);
+    background-color: rebeccapurple;
+    color: white;
+}
+.box2{
+    margin: 30px;
+    width: 100px;
+    height: 100px;
+    background-color: rebeccapurple;
+    border: 2px solid black;
+    transform: rotate(0.8turn)
+}
+/* transform rotate() permite rotar */
+/**/
+
+body{
+    background-color:gray;
+}
+
+    @media (min-width: 30em){
+        body{
+            background-color: cadetblue;
+        }
+    }
+
+    /*tenemos una hoja de estilo que le da al elemento <body>un color de fondo grisaceo. Sin embargo, luego usamos @mediapara crear una sección de nuestra hoja de estilo que solo se aplicará en los navegadores con una ventana gráfica de más de 30em de ancho. Si el navegador es más ancho que 30em, el color de fondo será azul.*/
+
+
+
+    /*Algunas propiedades como font, background, padding, bordery marginse llaman propiedades abreviadas . Esto se debe a que permitan establecer varios valores de propiedad en una sola línea, lo que ahorra tiempo y ordena el código.*/
+
+    /* En propiedades abreviadas con 4 valores, como margin y padding (relleno), los valores se aplican
+   según el orden: arriba, derecha, abajo e izquierda (en sentido horario desde la parte superior). También hay otros
+   tipos de abreviaturas, como las propiedades abreviadas con 2 valores que establecen el relleno/margen,
+   arriba/abajo, y luego izquierda/derecha 
+
+   padding: 10px 15px 15px 5px;
+
+   esto hace lo mismo que:
+    padding-top: 10px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-left: 5px;
+   */
+
+   body{
+    font-family: 'Poppins', sans-serif;
+    padding: 1em;
+    margin: 0 auto;
+    max-width: 33em;
+   }
