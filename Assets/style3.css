@@ -16,7 +16,7 @@
     margin: 1em auto;
 }
 .item{
-    background:orange;
+    background:rgb(169, 137, 77);
     border-radius: .5rem;
 }
 /* ¿Si es un texto? */
